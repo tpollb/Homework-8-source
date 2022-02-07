@@ -2,6 +2,9 @@
 
 namespace test_menu
 {
+    /// <summary>
+    /// Класс департаментов
+    /// </summary>
     public class Departaments
     {
         /// <summary>

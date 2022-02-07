@@ -1,8 +1,14 @@
 ﻿
 namespace test_menu
 {
+    /// <summary>
+    /// класс сотрудники
+    /// </summary>
     public class Employee
     {
+        /// <summary>
+        /// переменные
+        /// </summary>
         private int emp_id;
         private string surname;
         private string firstname;
@@ -11,6 +17,9 @@ namespace test_menu
         private int salary;
         private int project_number;
 
+        /// <summary>
+        /// инкапсуляция
+        /// </summary>
         public int Emp_id { get => emp_id; set => emp_id = value; }
         public string Surname { get => surname; set => surname = value; }
         public string Firstname { get => firstname; set => firstname = value; }
