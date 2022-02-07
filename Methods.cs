@@ -291,6 +291,12 @@ namespace test_menu
             Console.WriteLine($"Файл {filepath} создан");
         }
        
+        /// <summary>
+        /// метод заполнения поля количество сотрудников в коллекции департаменты
+        /// </summary>
+        /// <param name="dep_list"></param>
+        /// <param name="emp_list"></param>
+        /// <returns></returns>
         public static List<Departaments> EmpCoutnInDepartament(List<Departaments> dep_list, List<Employee> emp_list)
         {
             int i = default;
