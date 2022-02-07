@@ -314,7 +314,7 @@ namespace test_menu
         //  МЕТОДЫ МЕНЮ (Пункты меню) ////////////////////////////////////////////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         /// <summary>
-        /// поле меню 1. Сформировать файл сотрудников и департаментов
+        /// поле меню 1. Вывести данные сотрудников на экран
         /// </summary>
         public static void Menu_Method1()
         {
@@ -322,7 +322,7 @@ namespace test_menu
         }
 
         /// <summary>
-        /// Метод считывания сотрудников
+        /// поле меню 2. Вывести данные департаментов на экран
         /// </summary>
         public static void Menu_Method2()
         {
@@ -372,7 +372,7 @@ namespace test_menu
         }
 
         /// <summary>
-        /// Поле меню 6
+        /// Поле меню 6. Добавление сотрудника
         /// </summary>
         public static void Menu_Method6()
         {
@@ -422,12 +422,18 @@ namespace test_menu
 
             AddEmployeeToList(Globals.List_employee, Globals.List_employee.Count, sur, fst, age, dep, sal, prj_number);
         }
+        /// <summary>
+        /// Поле меню 7. Добавление департамента
+        /// </summary>
         public static void Menu_Method7()
         {
             Console.WriteLine("Введите нименование департамента");
             string dp_name = Console.ReadLine();
             AddDepartamentToList(Globals.List_Departaments, Globals.List_Departaments.Count, dp_name, DateTime.Now, 0);
         }
+        /// <summary>
+        /// Поле меню 8. Редактирование сотрудника
+        /// </summary>
         public static void Menu_Method8()
         {
             bool flag = default;
@@ -485,6 +491,9 @@ namespace test_menu
 
             EditEmployeeToList(id, Globals.List_employee, Globals.List_employee.Count, sur, fst, age, dep, sal, prj_number);
         }
+        /// <summary>
+        /// Поле меню 9. Редактирование департамента
+        /// </summary>
         public static void Menu_Method9()
         {
             bool flag = default;
@@ -502,6 +511,9 @@ namespace test_menu
             EditDepartamentToList(id, Globals.List_Departaments, id, dep_name, DateTime.Now, 0);
         }
 
+        /// <summary>
+        /// Поле меню 10. Сортировка сотрудников сначала по департаменту, затем по зарплате
+        /// </summary>
         public static void Menu_Method10()
         {
             Globals.List_employee = SortEmployee(Globals.List_employee);
