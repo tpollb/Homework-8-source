@@ -303,12 +303,12 @@ namespace test_menu
                     {
                         dep_list[j].SetDepartamentField(3, (i+1).ToString());
                         i++;
-                        Console.WriteLine($"i: {i} j:{j}");
+                        //Console.WriteLine($"i: {i} j:{j}");
                     }
                 }
                 i = 0;
                 j++;
-                Console.WriteLine($"i: {i} j:{j}");
+                //Console.WriteLine($"i: {i} j:{j}");
             }
             return dep_list;
         }
